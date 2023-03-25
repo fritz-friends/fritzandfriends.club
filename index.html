@@ -1,36 +1,180 @@
 <html>
 	<head>
 		<title>Fritz & Friends</title>
-		<style>
-			body {
-				background: black;
-				overflow: hidden;
-			}
-			.wrapper {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				
-				width: 100vw;
-				height: 100vh;
-				height: calc(100vh - env(safe-area-inset-bottom));
-			}
-			.logo-text {
-				display: none;
-			}
-			.logo-image {
-				width: auto;
-				height: auto;
-				max-width: 80vw;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="/assets/styles/styles.css" />
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<meta name="theme-color" content="#000000">
+		<link rel="mask-icon" href="/website_icon.svg" color="#A21D65">
+		<meta name="keywords" content="Homepage, Website, Design, Agency, Products">
+		<meta name="description" content="We build products and websites.">
+		<meta name="referrer" content="no-referrer-when-downgrade">
+		<meta name="robots" content="all">
+		<meta content="en_US" property="og:locale">
+		<meta content="Fritz & Friends" property="og:site_name">
+		<meta content="website" property="og:type">
+		<meta content="https://fritzandfriends.club" property="og:url">
+		<meta content="Homepage" property="og:title">
+		<meta content="We build products and websites." property="og:description">
+		<meta content="https://fritzandfriends.club/open-graph-share-image.png" property="og:image">
+		<meta content="1200" property="og:image:width">
+		<meta content="630" property="og:image:height">
+		<meta content="Fritz and Friends logo with a subtitle that says Purveyors of Fine Digital Goods" property="og:image:alt">
+		<meta content="https://github.com/fritz-friends" property="og:see_also">
+		<meta content="https://twitter.com/careerminderapp" property="og:see_also">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@careerminderapp">
+		<meta name="twitter:creator" content="@careerminderapp">
+		<meta name="twitter:title" content="Career Minder">
+		<meta name="twitter:description" content="We build products and websites.">
+		<meta name="twitter:image" content="https://fritzandfriends.club/twitter-share-image.png">
+		<meta name="twitter:image:width" content="800">
+		<meta name="twitter:image:height" content="418">
+		<meta name="twitter:image:alt" content="Fritz and Friends logo with a subtitle that says Purveyors of Fine Digital Goods">
+		<link href={pageUrl} rel="canonical">
+		<link href="https://careerminder.io" rel="home">
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="masthead-wrapper">
 			<h1>
-				<img src="ff_logo.svg" alt="Fritz & Friends" class="logo-image" />
-				<span class="logo-text">Fritz & Friends</span>
+				<img src="/assets/img/ff_logo.svg" alt="Fritz & Friends" class="logo-image" />
+				<span class="logo-text">Fritz &amp; Friends</span>
 			</h1>
+			<h2>Purveyors of Fine Digital Goods</h2>
 		</div>
+		<div class="work-section">
+			<p class="section-intro"><strong>We build products and websites</strong><br>For example:</p>
+			<a href="https://careerminder.io" title="Career Minder" class="card-wrapper">
+				<div class="work-card">
+					<div class="logo-wrapper">
+						<img src="/assets/img/cm_logo.png" alt="Career Minder Logo" />
+					</div>
+					<div class="description-wrapper">
+						<p>Manage your career and reach you goals</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="team-section">
+			<p class="section-intro">We are a father/son team who design, code, ride bicycles, and make photographs.</p>
+			<div class="bio-wrappers">
+				<div class="bio">
+					<img src="/assets/img/bio-mac.jpg" alt="Mac Read" />
+					<h2>James &ldquo;Mac&rdquo; Read</h2>
+					<p>Mac has been a programmer for 30+ years. He founded Milliseconds Sports Timing, which timed athletic events and now focuses on building modern web applications, specializing in React and Cloud Services. He once cross-country ski raced internationally, flew Apache helicopters, and now takes pictures all around the mountain west.</p>
+					<ul>
+						<li>
+							<a href="https://www.linkedin.com/in/jmacread/" title="James Read LinkedIn Profile" class="icon-link">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_7_747)">
+										<path d="M40 2.95556V37.0444C40 38.6667 38.6889 40 37.0444 40H2.95556C1.31111 40 0 38.6889 0 37.0444V2.95556C0 1.31111 1.31111 0 2.95556 0H37.0444C38.6889 0 40 1.31111 40 2.95556ZM11.9111 14.9778H5.91111V34.0889H11.9333V14.9778H11.9111ZM12.3778 8.86667C12.3778 6.86667 10.8222 5.42222 8.91111 5.42222C7 5.42222 5.44444 6.88889 5.44444 8.86667C5.44444 10.8444 7 12.3111 8.91111 12.3111C10.8222 12.3333 12.3778 10.8667 12.3778 8.86667ZM34.0889 22.2667C34.0889 16.4222 30.4667 14.4444 27.1111 14.4444C24 14.4444 21.9778 16.4444 21.4 17.6222H21.3111V14.9778H15.5333V34.0889H21.5556V23.7333C21.5556 20.9778 23.3111 19.6222 25.0889 19.6222C26.7778 19.6222 28.0889 20.5778 28.0889 23.6444V34.0889H34.1111V22.2667H34.0889Z" fill="white"/>
+									</g>
+									<defs>
+										<clipPath id="clip0_7_747">
+											<rect width="40" height="40" fill="white"/>
+										</clipPath>
+									</defs>
+								</svg>
+								<span>LinkedIn</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="bio">
+					<img src="/assets/img/bio-noah.jpg" alt="Noah Read" />
+					<h2>Noah Read</h2>
+					<p>Noah is a designer, and front-end engineer living in the Pacific Northwest. Over the last 13+ years, he&rsquo;s done branding, identity, built websites, designed products, and led other designers. In addition, he raises chickens, reads history books, and tries to keep up with his dad when they cycle up mountains together.</p>
+					<ul>
+						<li>
+							<a href="https://noahread.net" title="Noah Read’s website" class="icon-link">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM22.5313 22.5313C22.6503 21.8632 22.5744 21.1671 22.3034 20.5347C22.133 20.1368 21.8854 19.7641 21.5606 19.4394C21.2359 19.1146 20.8632 18.867 20.4653 18.6966C20.5312 18.4506 20.6606 18.2181 20.8535 18.0251L23.2223 15.6563C23.6346 15.9295 24.0258 16.2477 24.3891 16.6109C24.7523 16.9742 25.0705 17.3654 25.3437 17.7777C25.7427 18.3799 26.0455 19.0271 26.2523 19.6975C26.8544 21.65 26.6412 23.7999 25.6126 25.6127C25.2867 26.1872 24.8788 26.7278 24.3891 27.2175L23.0939 28.5127L20.8535 30.7531C17.9246 33.682 13.1759 33.682 10.2469 30.7531C7.31801 27.8241 7.31801 23.0754 10.2469 20.1465L12.4873 17.9061C12.2796 19.5755 12.5146 21.2894 13.1924 22.8578L13.0754 22.9749C11.7085 24.3417 11.7085 26.5578 13.0754 27.9246C14.4422 29.2915 16.6583 29.2915 18.0251 27.9246L18.1422 27.8076L19.6975 26.2523L21.5606 24.3891C22.0865 23.8633 22.41 23.2118 22.5313 22.5313ZM20.1464 22.9749C20.3394 22.7819 20.4688 22.5494 20.5346 22.3035C20.1368 22.133 19.7641 21.8854 19.4393 21.5607C19.1146 21.2359 18.867 20.8632 18.6965 20.4654C18.4256 19.8329 18.3497 19.1368 18.4687 18.4687C18.59 17.7882 18.9135 17.1367 19.4393 16.6109L21.3025 14.7477L22.8578 13.1924L22.9749 13.0754C24.3417 11.7086 26.5578 11.7086 27.9246 13.0754C29.2914 14.4422 29.2914 16.6583 27.9246 18.0251L27.8076 18.1422C28.4854 19.7106 28.7204 21.4246 28.5127 23.0939L30.753 20.8536C33.682 17.9246 33.682 13.1759 30.753 10.247C27.8241 7.31803 23.0754 7.31803 20.1464 10.247L17.9061 12.4873L16.6109 13.7825C16.1212 14.2722 15.7133 14.8129 15.3873 15.3874C14.3588 17.2001 14.1456 19.35 14.7477 21.3025C14.9545 21.973 15.2573 22.6201 15.6563 23.2224C15.9295 23.6346 16.2477 24.0259 16.6109 24.3891C16.9741 24.7523 17.3654 25.0705 17.7776 25.3437L20.1464 22.9749Z" fill="white"/>
+								</svg>
+								<span>Website</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/noahread/" title="Noah Read LinkedIn Profile" class="icon-link">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_7_747)">
+										<path d="M40 2.95556V37.0444C40 38.6667 38.6889 40 37.0444 40H2.95556C1.31111 40 0 38.6889 0 37.0444V2.95556C0 1.31111 1.31111 0 2.95556 0H37.0444C38.6889 0 40 1.31111 40 2.95556ZM11.9111 14.9778H5.91111V34.0889H11.9333V14.9778H11.9111ZM12.3778 8.86667C12.3778 6.86667 10.8222 5.42222 8.91111 5.42222C7 5.42222 5.44444 6.88889 5.44444 8.86667C5.44444 10.8444 7 12.3111 8.91111 12.3111C10.8222 12.3333 12.3778 10.8667 12.3778 8.86667ZM34.0889 22.2667C34.0889 16.4222 30.4667 14.4444 27.1111 14.4444C24 14.4444 21.9778 16.4444 21.4 17.6222H21.3111V14.9778H15.5333V34.0889H21.5556V23.7333C21.5556 20.9778 23.3111 19.6222 25.0889 19.6222C26.7778 19.6222 28.0889 20.5778 28.0889 23.6444V34.0889H34.1111V22.2667H34.0889Z" fill="white"/>
+									</g>
+									<defs>
+										<clipPath id="clip0_7_747">
+											<rect width="40" height="40" fill="white"/>
+										</clipPath>
+									</defs>
+								</svg>
+								<span>LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://indieweb.social/@noahread" title="Noah Read on Mastadon" class="icon-link">
+								<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M27.9681 30.4877C33.0507 29.8893 37.4761 26.8012 38.0323 23.9796C38.9087 19.5347 38.8364 13.1326 38.8364 13.1326C38.8364 4.45542 33.071 1.91199 33.071 1.91199C30.1641 0.595449 25.1724 0.0418086 19.9865 0H19.8591C14.6731 0.0418086 9.6847 0.595449 6.77755 1.91199C6.77755 1.91199 1.01199 4.45542 1.01199 13.1326C1.01199 13.6587 1.00924 14.212 1.00637 14.788C0.998394 16.3876 0.989549 18.1624 1.03647 20.0149C1.24584 28.5007 2.61418 36.864 10.5707 38.9406C14.2393 39.8981 17.389 40.0985 19.9257 39.961C24.526 39.7095 27.1084 38.3421 27.1084 38.3421L26.9567 35.0509C26.9567 35.0509 23.6693 36.0731 19.9773 35.9485C16.3194 35.8248 12.4579 35.5595 11.8663 31.131C11.8116 30.742 11.7843 30.3261 11.7843 29.8893C11.7843 29.8893 15.3751 30.7547 19.9257 30.9603C22.7083 31.0862 25.3178 30.7996 27.9681 30.4877ZM32.0358 24.3125V13.8058C32.0358 11.6585 31.4813 9.95209 30.3678 8.68965C29.2191 7.4272 27.715 6.78003 25.8482 6.78003C23.6878 6.78003 22.052 7.59875 20.9706 9.23639L19.9189 10.9745L18.8675 9.23639C17.7859 7.59875 16.1501 6.78003 13.9899 6.78003C12.1228 6.78003 10.6188 7.4272 9.4703 8.68965C8.35657 9.95209 7.80211 11.6585 7.80211 13.8058V24.3125H12.0234V14.1146C12.0234 11.9649 12.9406 10.8738 14.7754 10.8738C16.804 10.8738 17.8209 12.1682 17.8209 14.7275V20.3094H22.0172V14.7275C22.0172 12.1682 23.0339 10.8738 25.0625 10.8738C26.8972 10.8738 27.8145 11.9649 27.8145 14.1146V24.3125H32.0358Z" fill="white"/>
+								</svg>
+								<span>Mastodon</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="contact-section">
+			<p class="section-intro">If you&rsquo;d like to work with us or just reach out, please get in touch:</p>
+			<form id="my-form" action="https://formspree.io/f/xknavkpy" method="POST">
+			  <label for="full-name">Name</label>
+			  <input type="text" name="name" id="full-name" required />
+			  <label>Email</label>
+			  <input type="email" name="email" required />
+			  <label>Message</label>
+			  <textarea rows="3" id="message" name="message" required></textarea>
+			  <div class="captcha-wrapper">
+			  	<div class="g-recaptcha" data-sitekey="6LcdWy0lAAAAAJ2f0pewuWfPn8zl6pnFrA-TLelr"></div>
+			  </div>
+			  <button id="my-form-button">Submit</button>
+			  <p id="my-form-status"></p>
+			</form>
+			<!-- Place this script at the end of the body tag -->
+			<script>
+				var form = document.getElementById("my-form");
+				
+				async function handleSubmit(event) {
+				  event.preventDefault();
+				  var status = document.getElementById("my-form-status");
+				  var data = new FormData(event.target);
+				  fetch(event.target.action, {
+					method: form.method,
+					body: data,
+					headers: {
+						'Accept': 'application/json'
+					}
+				  }).then(response => {
+					status.classList.add("active")
+					if (response.ok) {
+					  status.innerHTML = "Thanks for your submission!";
+					  form.reset()
+					} else {
+					  response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+						  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+						} else {
+						  status.innerHTML = "Oops! There was a problem submitting your form"
+						}
+					  })
+					}
+				  }).catch(error => {
+					status.innerHTML = "Oops! There was a problem submitting your form";
+				  });
+				}
+				form.addEventListener("submit", handleSubmit)
+			</script>
+		</div>
+		<footer>
+			<p>&copy;2023 &bull; Fritz &amp; Friends</p>
+		</footer>
 	</body>
 </html>
