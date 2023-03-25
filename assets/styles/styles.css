@@ -254,6 +254,7 @@ body {
 	text-align: center;
 	margin-bottom: 20px;
 	line-height: 1.3333333333em;
+	border-radius: 0;
 }
 .contact-section input:focus, .contact-section textarea:focus {
 	outline: none;
