@@ -4,7 +4,8 @@ html {
 }
 body {
 	margin: 0;
-	background: #181818 url('/assets/img/grid-fragment.svg') repeat;
+	background: conic-gradient(from 90deg at 1.1px 1.1px, #181818 25%,#212121 0);
+	background-size: 24px 24px;
 }
 .masthead-wrapper {
 	display: flex;
